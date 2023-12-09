@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head><!-- collection of metadata -->
+  <meta charset="UTF-8"><!-- Кодировка символов страницы -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ралли</title><!-- заголовок -->
+  <link rel="stylesheet" href="rally-styles.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans"
+    rel="stylesheet" />
+ <link rel="shortcut icon" type="images/jpg" href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Практика 1/images/favicon.jpg"><!-- favicon -->
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  </style>
+  <script src="JS-F1.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ </head>
+
+ <body>
+  <header>
+
+    <div class = "logo-and-buttons">
+     <div class = "logo">
+       
+       <a style="text-decoration: none; color: #dedede;" href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/indexV2.html"><h1><b><pre>МИР 
+АВТОГОНОК</pre></b></h1></a>
+     </div>
+       
+       
+       <!--<h2><br>МЕНЮ</br></h2>-->
+
+   <input id="toggle" type="checkbox"></input>
+   
+   <label for="toggle" class="hamburger">
+     <div class="top-bun"></div>
+     <div class="meat"></div>
+     <div class="bottom-bun"></div>
+   </label>
+
+   
+   
+   <div class="nav">
+     
+       <nav>
+         <ul>
+         <li><a href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/circuit-race/circuit-race.html">Formula One</a></li>
+           <li><a href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/enduranceRace/endurance-race.html">24 Hours of Le Mans</a></li>
+           <li><a href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Rally/rally.html">WRC</a></li>
+           <li><a href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Drift/drift.html">RDS</a></li>
+           <li><a href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Forum/forum.html">Статьи</a></li>
+           <li><a href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/registration.html" style="text-decoration: none; color: #dedede;">Register</a></li>
+
+         </ul>
+       </nav>
+     
+   </div>
+
+
+
+   <button id="notificationButton"><i class="fa fa-bell"></i> <span id="notificationCount">0</span></button>
+   <div id="notificationContainer" style="display: none;">
+     <ul id="notificationsList"></ul>
+   </div>
+
+   <script src="Notifications-main-page.js"></script>
+   </div>
+   </header>
+     
+     <main>
+      
+      <div class="container">
+        <h1>WRC</h1>
+        <p>Чемпионат мира по ралли (WRC) - это всемирно признанное соревнование по автоспорту, 
+            которое проверяет как мастерство водителей, так и ходовые качества автомобилей. Он управляется и организуется Международной 
+            федерацией автомобилестроения (FIA) и с момента своего основания является платформой для демонстрации производителями 
+            автомобилей своих технологий и дизайнерского мастерства. </p>
+        
+      </div>
+      
+      <div class="blank"></div>
+      
+      <div class="container second">
+        <div class="item">
+          <div class="img img-first"></div>
+          <div class="card">
+            <h3>Группа N</h3>
+            <p>Это серийный автомобиль, который должен быть выпущен в количестве не менее 2500 шт. При подготовке его к соревнованиям разрешено дорабатывать кузов, 
+                систему выпуска, настроить подвеску, сменить амортизаторы. Производится также перепрограммирование бортового компьютера, управляющего двигателем.</p>
+           
+          </div>
+        </div>
+        <div class="item">
+          <div class="img img-second"></div>
+          <div class="card">
+            <h3>Группа А</h3>
+            <p>Разрешены гораздо более радикальные конструктивные изменения – спортивная подвеска, отличающаяся от серийной, специальная гоночная коробка передач. 
+                Может быть несколько изменена конструкция двигателя: иное соотношение диаметра цилиндров и хода поршня, увеличение количества оборотов, 
+                применение высокотехнологических материалов (композиты и специальные сплавы) и т.д.</p>
+            
+          </div>
+        </div>
+        <div class="item">
+          <div class="img img-third"></div>
+          <div class="card">
+            <h3>WRC (World Rally Car)</h3>
+            <p>Не обязательно, чтобы базовый серийный автомобиль имел привод на все колеса и турбомотор. Можно готовить спортивный двигатель, не имеющий серийного аналога. 
+                Благодаря этому WRC имеет очень мало общего с базовым серийным автомобилем, а для его омологации достаточно выпуска минимальной серии в 20 машин.</p>
+            
+          </div>
+        </div>
+        <iframe id="view360Iframe" width="90%" scrolling="0" src="https://sketchfab.com/3d-models/free-lancia-delta-hf-integrale-evo-2-85614131e0dc4613a948472aaa935fc7/embed?ui_infos=0&amp;ui_watermark=0&amp;ui_help=0&amp;ui_settings=0&amp;ui_inspector=0&amp;ui_annotations=0&amp;ui_stop=0&amp;ui_vr=0&amp;preload=1&amp;autostart=1&amp;ui_hint=2&amp;autospin=0.2">
+        </iframe>
+      </div>
+      
+      <div class="blank"></div>
+    
+      <h2 style="text-align: center;">"НОВОСТИ"</h2>
+      
+      <div class="carousel">
+ <div class="carousel-item">
+   <img src="https://wrc-info.ru/uploads/posts/2023-12/1701543982_screenshot_4.png">
+   <div class="text">Ford показал гоночный пикап Ranger для «Дакара» Команда готовится к дебюту в 2024 году</div>
+ </div>
+ <div class="carousel-item">
+   <img src="https://wrc-info.ru/uploads/posts/2023-11/1701326543_toyota-gr-yaris-wrc-special-edition_1701259259967173585.jpg">
+   <div class="text">Toyota посвятила лимитированную серию Yaris победе в чемпионате мира по ралли</div>
+ </div>
+ <div class="carousel-item">
+   <img src="https://wrc-info.ru/uploads/posts/2023-11/1701172776_8j6a1248-x52-2048x1366.jpg">
+   <div class="text">«Этапы совершенно непохожи друг на друга». Виктор Соколов — о маршруте ралли «Шелковый путь» 2024 года</div>
+ </div>
+</div>
+
+
+    <div class="history">
+      <h2><b>История WRC</b></h2>
+      <div class = "history-title">
+      <p><b>WRC</b> стартовал в 1973 году, развившись из более ранних соревнований, таких как чемпионат Европы по ралли и Международный чемпионат производителей. 
+        Первым соревнованием WRC стало ралли Монте-Карло, состоявшееся в январе 1973 года, и первый чемпионат выиграла Alpine-Renault.
+      </p>
+      <p><b>Начало</b></p>
+      <p>
+        В первые годы существования WRC основное внимание уделялось выносливости. Ралли часто охватывали тысячи километров, а этапы проводились на дорогах 
+        общего пользования, которые были закрыты на время проведения мероприятия. Этот формат привел к некоторым из самых знаковых моментов в истории автоспорта, 
+        таким как эпические поединки между Lancia и Audi в 1980-х годах. Однако это также вызвало серьезные проблемы с безопасностью, что привело к изменениям в 
+        правилах и формате чемпионата.
+      </p>
+
+      <p><b>Трасса</b></p>
+      <p>
+        С середины 1980-х до начала 2000-х годов в WRC наблюдался сдвиг в сторону более коротких и интенсивных этапов, часто проводимых на специальных закрытых дорогах 
+        или специально построенных трассах. Это изменение было продиктовано желанием сделать спорт более удобным для зрителей и снизить риски, связанные с высокоскоростной 
+        ездой по дорогам общего пользования. Внедрение новых технологий, таких как турбонаддув и полный привод, также внесло свой вклад в эволюцию WRC в течение этого 
+        периода.</p>
+
+      <p><b>Гонщики</b></p>
+      <p>
+        WRC также стала платформой для некоторых из самых успешных и влиятельных гонщиков в истории автоспорта. Такие имена, как Себастьен Леб, 
+        Томми Мякинен и Вальтер Рерль, являются синонимами чемпионата, и их подвиги помогли сформировать спорт таким, каким мы его знаем сегодня.</p>
+
+      <p><b>Эволюция и современная эпоха</b></p>
+      <p>
+        Сегодня WRC продолжает оставаться демонстрацией передовых автомобильных технологий, а производители используют чемпионат в качестве испытательного 
+        полигона для новых разработок и инноваций. Автомобили нынешнего поколения WRC являются одними из самых совершенных и быстрых раллийных автомобилей, 
+        когда-либо созданных, способных разгоняться с 0 до 100 км/ч менее чем за 3 секунды.</p>
+ 
+      </div>
+      
+    </div>
+    <h2 style="color: #dedede; text-align: center; font-size: 2em;">ГАЛЕРЕЯ</h2>
+    <div class = "gallery">
+
+      <img src="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Rally/31dec57ddcdab125235c9f118cda01eb.jpg" alt=""  >
+      <img src="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Rally/36306d33bf2ec73125dbba306fb6fdbf.jpg" alt="" >
+      <img src="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Rally/3de3a5cfe0983dad513ed84f535d24dd.jpg" alt="" >
+      <img src="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Rally/4ef078ee61f06de28862a5624399be69.jpg" alt="" >
+      <img src="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Rally/763e2d1a0eba1f341674dca9d2b05d5e.jpg" alt="" >
+      <img src="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Rally/807bd459fcdcd08471b5ce96b064dc1c.jpg" alt="" >
+      <img src="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Rally/82f058edbfbc71e8faffe87b5b788f12.jpg" alt="" >
+      <img src="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Rally/b04fe28ac9bccc0874db8e1df636448b.jpg" alt="" >
+      <img src="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Rally/d59ad21c19babedadcaa48a7699463fe.jpg" alt="" >
+      <img src="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Rally/de0e03b58ff509cda3a39baf4003d007.jpg" alt="" >
+    </div>
+    
+    <script>
+      let loader = new THREE.GLTFLoader();
+      loader.load('C:\Users\oniwi\Downloads\mercedes_f1_w14_free.zip\scene.gltf', function(gltf){
+        car = gltf.scene.children[0];
+        car.scale.set(0.5,0.5,0.5);
+        scene.add(gltf.scene);
+        animate();
+});
+
+    </script>
+    
+  </main>
+  <footer class = "footer"><!-- Нижний колонтитул -->
+    <div class = "footer-about-us">
+      <h3>О Нас</h3>
+      <p>Данный сайт разработан и подготовлен в рамках курсовой работы по предмету "Разработка Клиентских Частей интернет Ресурсов" РТУ МИРЭА. Работа посвящена теме "Мир Автоспорта",
+         здесь можно ознакомиться с последними новостями мира автоспорта, различными дисциплинами, известными гонщиками и культовыми гоночными машинами, навсегда вписавшими свое Имя
+        в историю автогонок.      Автор: студент группы <b style="background-color: #dedede; color: black;">ИКБО-16-22 Климкин Владимир</b>.</p>
+    </div>
+    <div class = "footer-refers">
+      <h3>Ссылки</h3>
+      <li><a href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/circuit-race/circuit-race.html">Кольцевые гонки</a></li>
+              <li><a href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/enduranceRace/endurance-race.html">Гонки на выносливость</a></li>
+              <li><a href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Rally/rally.html">Ралли</a></li>
+              <li><a href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Drift/drift.html">Дрифт</a></li>
+              <li><a href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/Forum/forum.html">Статьи</a></li>
+              <li><a href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/registration.html">Зарегистрироваться</a></li>
+              <li><a href="#notificationButton">Перейти в начало</a><!-- якорь, ведущий в конец страницы --></li>
+    </div>
+    <div class = "footer-contacts">
+      <h3 id="bottom">Свяжитесь с Нами</h3>
+      <address>
+        Телефон: <a href="tel:+7 (985) 693-94-02">+7 (985) 693-94-02</a><br>
+        Email: <a href="oniwik61@gmail.com">oniwik61@gmail.com</a>
+      </address>
+      <div class="social-buttons">
+        <a class="button-vk" href="#" ><i class="fa fa-vk"></i></a>
+        <a class="button-telegram" href="#"><i class="fa fa-telegram"></i></a>
+        <a class="button-steam" href="#"><i class="fa fa-github"></i></a>
+      </div>
+    </div>
+   
+  </footer>
+  
+  
+ </body>

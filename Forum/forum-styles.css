@@ -1,0 +1,613 @@
+:root{
+    --background-main-page: #0a0a0a;
+    --font-color-white: #dedede;
+    --design-color: rgb(6, 190, 0);
+    /*--design-color: #F99417;*/
+  }
+   body{
+    font-family: 'Roboto', sans-serif;
+    margin:0%;
+    margin-top: 0%;
+    width: 100%;
+    background-color: var(--background-main-page);
+   /* padding-left: 5%;
+    padding-right: 5%;*/
+   }
+  
+   header{
+    background-color: var(--background-main-page);
+    width: 100%;
+   /* display: block;*/
+    color: var(--font-color-white);
+    border-bottom: var(--design-color) 5px solid;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .nav {
+    background-color: var(--background-main-page);
+    justify-content: center;
+    color: var(--font-color-white);
+    
+   /* border-top: var(--design-color) 3px solid;
+    border-bottom: var(--design-color) 3px solid;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s linear, opacity 0.3s linear;*/
+  }
+  .nav nav{
+    position: relative;
+    top: 25%;
+  }
+  
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0px;
+    list-style-type: none;
+    
+  }
+  
+  .nav ul li a{
+    
+    /*margin: 20px;*/
+    padding: 20px;
+    color: var(--font-color-white);
+    font-size: 23px;
+    text-decoration: none;
+    background-color: var(--background-main-page);
+    transition: 0.5s all;
+  }
+  
+  .nav ul li a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: rgb(32, 190, 0);
+    text-decoration: none;
+  }
+  .nav ul li a:active {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: rgb(32, 190, 0);
+    text-decoration: none;
+  }
+  
+  .logo-and-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding-top: 1%;
+   }
+   .reg{
+    font-size: 1.5em; 
+    text-align: center;
+    height: fit-content;
+    padding-top: 1.7%;
+   }
+   
+  
+   .logo{
+    background-color: var(--background-main-page);
+    position:static;
+    padding: 1%;
+    padding-top: 0%;
+    color: var(--font-color-white);
+    margin: 0%;
+    font-size: 0.7em;
+   }
+  
+   #notificationButton{
+    color: black;
+    background-color: var(--design-color);
+    position: relative;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 50%;
+   }
+   #notificationButton #notificationCount{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+  }
+  
+   #notificationContainer {
+    position: absolute;
+    background-color: #3eb100;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    padding: 1%;
+    z-index: 1;
+    color: black;
+  }
+  
+  #notificationsList li {
+    border-bottom: 1px solid #000000;
+  }
+  
+  .notification {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: #09ff00;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+  
+  #dynamicList{
+    color: var(--font-color-white);
+  }
+  #toggle{
+    display: none;
+  }
+
+
+.articles{
+  display: grid;
+  grid-template-columns: repeat(1fr, 2);
+  grid-template-rows: repeat(1fr, 2);
+  grid-template-areas: 
+  "a1 a2"
+  "a3 a4";
+  padding: 10%;
+  gap: 10px;
+}
+
+.articles div img{
+  width: 100%;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.art{
+  position: relative;
+  transition: 0.5s all;
+}
+.art p{
+  font-size: 1.1em;
+  color: #dedede;
+  position: absolute;
+  top: 20%;
+  opacity: 0;
+  transition: 0.5s all;
+  padding: 5%;
+}
+.art:hover img{
+  filter: brightness(30%);
+  transition: 0.5s all;
+}
+.art:hover p{
+  opacity: 1;
+  filter: brightness(150%);
+}
+
+
+.articles .art:nth-child(1)::before{
+  content: "Авария Айртона Сенны: что случилось 29 лет назад";
+  position: absolute;
+  top: 80%;
+  text-align: center;
+  color: #dedede;
+  background-color: #00000091;
+  width: 100%;
+  font-size: 1.5em;
+  opacity: 1;
+  transition: 0.5s all;
+}
+.articles .art:nth-child(2)::before{
+  content: "Как Генри Форд создал конвейер и правда ли, что он был первым";
+  position: absolute;
+  top: 80%;
+  text-align: center;
+  color: #dedede;
+  background-color: #00000091;
+  width: 100%;
+  font-size: 1.5em;
+  opacity: 1;
+  transition: 0.5s all;
+}
+.articles .art:nth-child(3):before{
+  content: "Круче Ferrari и Lamborghini: история забытой марки Iso";
+  position: absolute;
+  top: 80%;
+  text-align: center;
+  color: #dedede;
+  background-color: #00000091;
+  width: 100%;
+  font-size: 1.5em;
+  opacity: 1;
+  transition: 0.5s all;
+}
+.articles .art:nth-child(4):before{
+  content: "Крутые машины, ради которых объединялись компании. Иначе их бы не было";
+  position: absolute;
+  top: 80%;
+  text-align: center;
+  color: #dedede;
+  background-color: #00000091;
+  width: 100%;
+  font-size: 1.5em;
+  opacity: 1;
+  transition: 0.5s all;
+}
+
+
+.articles:nth-child(1){
+  grid-area: a1;
+}
+.articles:nth-child(2){
+  grid-area: a2;
+}
+.articles:nth-child(3){
+  grid-area: a3;
+}
+.articles:nth-child(4){
+  grid-area: a4;
+}
+
+
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px;
+  grid-template-areas: "about-us refers contacts";
+  margin: 0%;
+  padding: 5%;
+  background-color: var(--background-main-page);
+  color: var(--font-color-white);
+}
+.footer h3{
+  width: fit-content;
+  position: relative;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.footer h3::before{
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding: 1px;
+  background: var(--background-main-page);
+  transition: 1s all;
+  
+}
+.footer-about-us:hover h3::before{
+  box-shadow: inset 6.5em 0 0 0 rgb(255, 255, 255);
+}
+.footer-refers:hover h3::before{
+  box-shadow: inset 6.5em 0 0 0 rgb(255, 255, 255);
+}
+.footer-contacts:hover h3::before{
+  box-shadow: inset 8.5em 0 0 0 rgb(255, 255, 255);
+}
+
+
+.footer-about-us{
+  display: flex;
+  flex-direction: column;
+  /*flex-wrap: wrap;*/
+  grid-area: about-us;
+  justify-self: center;
+  
+}
+.footer-about-us p{
+  font-size: 18px;
+  margin: 0;
+}
+.footer-refers{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  grid-area: refers;
+  justify-self: center;
+}
+.footer-refers a{
+  color: var(--font-color-white);
+  text-decoration: none;
+  font-size: 18px;
+}
+.footer-contacts{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  grid-area: contacts;
+  justify-self: center;
+  text-align: center;
+}
+
+
+.social-buttons a{
+  z-index: 5;
+}
+.social-buttons{
+  position: relative;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.button-vk,
+.button-telegram,
+.button-steam {
+  position: relative;
+  padding: 10px 20px;
+  color: var(--font-color-white);
+  text-decoration: none;
+  font-size: 1.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  /*background: linear-gradient(to right, rgb(0, 0, 255), rgb(30, 155, 13));*/
+  
+}
+
+.button-vk,
+.button-steam,
+.button-telegram{
+  background: var(--background-main-page);
+  transition: 0.5s all;
+  padding: 15px;
+}
+
+
+.button-vk:hover{
+  box-shadow: inset 6.5em 0 0 0 rgb(76, 117, 163);
+}
+.button-steam:hover{
+  box-shadow: inset 6.5em 0 0 0 rgb(0, 0, 0);
+}
+.button-telegram:hover{
+  box-shadow: inset 6.5em 0 0 0 rgb(42 171 238);
+}
+
+
+  
+  
+  @media (min-width: 769px) and (max-width: 1000px) {
+    .footer{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "about-us refers"
+      "contacts contacts";
+      margin: 0%;
+      padding: 5%;
+      background-color: black;
+      color: white;
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 768px) {
+  
+    #toggle {
+      display: none;
+    }
+    
+    /**
+      Hamburger
+    **/
+    .hamburger {
+      
+      position: absolute;
+      top: 75%;
+      left: 10%;
+      margin-left: -2em;
+      margin-top: -45px;
+      width: 2em;
+      height: 45px;
+      z-index: 5;
+    }
+    
+    .hamburger div {
+      position: relative;
+      width: 3em;
+      height: 7px;
+      border-radius: 3px;
+      background-color: #ffffff;
+      margin-top: 8px;
+      transition:  0.3s all ease-in-out;
+    }
+    
+    /**
+    Nav Styles
+    **/
+    .nav {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      top: -100%; left: 0; right: 0; bottom: 0;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      transform: scale(0);
+    }
+    .nav-wrapper {
+      position: relative;
+      overflow: hidden;
+      overflow-y: auto;
+      height: 100%;
+    }
+    .nav nav {
+      text-align: center;
+      top: 15%;
+    }
+    nav ul{
+      padding: 0%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    nav a {
+      position: relative;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 1.5em;
+      display: inline-block;
+      margin-top: 1.25em;
+      transition: color 0.2s ease-in-out;
+      letter-spacing: 1px;
+      width: 50%;
+    }
+    nav a:before {
+      content: '';
+      height: 0;
+      position: absolute;
+      width: 0.25em;
+      background-color: rgb(50, 215, 0);
+      left: -0.5em;
+      transition: all 0.2s ease-in-out;
+    }
+    nav a:hover {
+      color: rgb(68, 255, 0);
+    }
+    nav a:hover:before {
+      height: 100%;
+    }
+    
+    /**
+    Animations
+    **/
+    #toggle:checked + .hamburger .top-bun {
+      transform: rotate(-45deg);
+      margin-top: 25px;
+    }
+    #toggle:checked + .hamburger .bottom-bun {
+      opacity: 0;
+      transform: rotate(45deg);
+      
+    }
+    #toggle:checked + .hamburger .meat {
+      transform: rotate(45deg);
+      margin-top: -7px;
+    }
+    
+    #toggle:checked + .hamburger + .nav {
+      top: 0;
+      transform: scale(1);
+    }
+  
+   
+    .footer{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: 
+      "about-us" 
+      "refers"
+      "contacts";
+      margin: 0%;
+      padding: 5%;
+      background-color: var(--background-main-page);
+      color: white;
+    }
+  
+  
+     #notificationButton{
+      color: black;
+      background-color: var(--design-color);
+      position: relative;
+      margin: 2%;
+      padding: 4%;
+      border-radius: 50%;
+      font-size: 1.25em;
+      z-index: -1;
+     }
+     .logo-and-buttons{
+      justify-content: space-around;
+     }
+
+
+
+     .articles{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: 
+      "a1"
+      "a2"
+      "a3" 
+      "a4";
+      gap: 2%;
+    }
+    
+
+    .art p{
+      font-size: 1em;
+      color: #dedede;
+      position: absolute;
+      top: 0%;
+      opacity: 0;
+      transition: 0.5s all;
+      padding: 3%;
+    }
+    .art:hover img{
+      filter: brightness(30%);
+      transition: 0.5s all;
+    }
+    .art:hover p{
+      opacity: 1;
+      filter: brightness(150%);
+    }
+    
+    
+    .articles .art:nth-child(1)::before{
+      content: "Авария Айртона Сенны: что случилось 29 лет назад";
+      position: absolute;
+      top: 70%;
+      text-align: center;
+      color: #dedede;
+      background-color: #00000091;
+      width: 100%;
+      font-size: 1em;
+      opacity: 1;
+      transition: 0.5s all;
+    }
+    .articles .art:nth-child(2)::before{
+      content: "Как Генри Форд создал конвейер и правда ли, что он был первым";
+      position: absolute;
+      top: 70%;
+      text-align: center;
+      color: #dedede;
+      background-color: #00000091;
+      width: 100%;
+      font-size: 1em;
+      opacity: 1;
+      transition: 0.5s all;
+    }
+    .articles .art:nth-child(3):before{
+      content: "Круче Ferrari и Lamborghini: история забытой марки Iso";
+      position: absolute;
+      top: 70%;
+      text-align: center;
+      color: #dedede;
+      background-color: #00000091;
+      width: 100%;
+      font-size: 1em;
+      opacity: 1;
+      transition: 0.5s all;
+    }
+    .articles .art:nth-child(4):before{
+      content: "Крутые машины, ради которых объединялись компании. Иначе их бы не было";
+      position: absolute;
+      top: 70%;
+      text-align: center;
+      color: #dedede;
+      background-color: #00000091;
+      width: 100%;
+      font-size: 1em;
+      opacity: 1;
+      transition: 0.5s all;
+    }
+  
+  }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head><!-- collection of metadata -->
+  <meta charset="UTF-8"><!-- Кодировка символов страницы -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Моя первая страница</title><!-- заголовок -->
+  <link rel="stylesheet" href="registration.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans"
+    rel="stylesheet" />
+ <link rel="shortcut icon" type="images/jpg" href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Практика 1/images/favicon.jpg"><!-- favicon -->
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+</style>
+
+ </head>
+
+ <body>
+  
+    <form method="get">
+      <div class = "rectangle-1"></div>
+      <div class = "rectangle-2"></div>
+      <div class = "rectangle-3"></div>
+      <div class = "rectangle-4"></div>
+      <div class = "rectangle-5"></div>
+        <fieldset>
+          <legend>Войти</legend>
+    
+          <p>
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Имя" required>
+          </p>
+
+          <p>
+            <label for="surname"></label>
+            <input type="text" id="surname" name="surname" placeholder="Фамилия" required>
+          </p>
+        <p>
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="Почта" required >
+        </p>
+    
+        <p>
+          <label for="password"></label>
+          <input type="password" id="password" name="password" pattern = "qwerty" placeholder="Пароль" required>
+        </p>
+        <p>
+          <label for="large-text"></label>
+          <textarea name="large-text" id="large-text" cols="30" rows="5" placeholder="Оставьте сообщение (необязательно)"></textarea>
+        </p>
+        <button style = "padding: 15px; cursor: pointer;" id = "Enter" disabled>ВОЙТИ</button>
+        <div class="helper">
+        <p>Забыли пароль?</p> <a href="/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/indexV2.html">Перейти на главную</a>
+        <p>Еще нет аккаунта?</p> <a href="" style="text-decoration: none;">Зарегистрироваться</a>
+        <button class="button">Captcha</button>
+      </div>
+      </fieldset>
+      <script src="login.js"></script>
+ </body>
