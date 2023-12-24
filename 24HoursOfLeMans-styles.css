@@ -200,7 +200,7 @@ nav ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("/Users/oniwi/OneDrive/Рабочий стол/РКЧиР/Детище/24HoursOfLeMans/Без названия.jpg");
+    background-image: url("24HoursOfLeMans/Без названия.jpg");
     
     background-size: cover;
     background-position: center;
