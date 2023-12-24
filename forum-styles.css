@@ -214,7 +214,7 @@
   opacity: 1;
   transition: 0.5s all;
 }
-.articles .art:nth-child(3):before{
+.articles .art:nth-child(3)::before{
   content: "Круче Ferrari и Lamborghini: история забытой марки Iso";
   position: absolute;
   top: 80%;
@@ -226,7 +226,7 @@
   opacity: 1;
   transition: 0.5s all;
 }
-.articles .art:nth-child(4):before{
+.articles .art:nth-child(4)::before{
   content: "Крутые машины, ради которых объединялись компании. Иначе их бы не было";
   position: absolute;
   top: 80%;
@@ -459,7 +459,7 @@
       letter-spacing: 1px;
       width: 50%;
     }
-    nav a:before {
+    nav a::before {
       content: '';
       height: 0;
       position: absolute;
@@ -471,7 +471,7 @@
     nav a:hover {
       color: rgb(68, 255, 0);
     }
-    nav a:hover:before {
+    nav a:hover::before {
       height: 100%;
     }
     
@@ -585,7 +585,7 @@
       opacity: 1;
       transition: 0.5s all;
     }
-    .articles .art:nth-child(3):before{
+    .articles .art:nth-child(3)::before{
       content: "Круче Ferrari и Lamborghini: история забытой марки Iso";
       position: absolute;
       top: 70%;
@@ -597,7 +597,7 @@
       opacity: 1;
       transition: 0.5s all;
     }
-    .articles .art:nth-child(4):before{
+    .articles .art:nth-child(4)::before{
       content: "Крутые машины, ради которых объединялись компании. Иначе их бы не было";
       position: absolute;
       top: 70%;
