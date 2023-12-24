@@ -522,6 +522,7 @@ aside a{
       color: var(--font-color-white);
       padding: 3% 3% 3% 3%;
       justify-content: center;
+         position: relative;
      }
      aside img{
       width: 100%;
