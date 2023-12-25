@@ -198,7 +198,7 @@ nav ul{
   .blank,
   .other {
     width: 100%;
-    min-height: 60%;
+    min-height: 60vh;
     background-color: var(--color);
   }
   
