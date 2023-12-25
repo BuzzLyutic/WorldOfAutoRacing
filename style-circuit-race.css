@@ -703,7 +703,7 @@ p{
 
     .container{
       width: 373px;
-      height: 896px;
+      min-height: 896px;
     }
      
 
