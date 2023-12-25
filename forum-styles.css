@@ -540,7 +540,11 @@
       "a4";
       gap: 2%;
     }
-    
+
+    .art img{
+      width: 332px;
+      height: 207px;
+    }
 
     .art p{
       font-size: 1em;
