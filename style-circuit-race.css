@@ -700,6 +700,11 @@ p{
      .logo-and-buttons{
       justify-content: space-around;
      }
+
+    .container{
+      width: 373px;
+      height: 896px;
+    }
      
 
     .title{
