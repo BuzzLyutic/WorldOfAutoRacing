@@ -512,7 +512,7 @@ aside a{
       "contacts";
       margin: 0%;
       padding: 5%;
-      background-color: black;
+      background-color: var(--background-main-page);
       color: white;
     }
   
@@ -526,7 +526,8 @@ aside a{
       justify-content: center;
      }
      aside img{
-      width: 100%;
+      width: 312px;
+      height: 208px;
       border-radius: 2%;
      }
     
@@ -556,8 +557,8 @@ aside a{
       font-size: 1.5em;
     }
     .news img{
-      width: 90%;
-      height: fit-content;
+      width: 298px;
+      height: 199px;
     }
 
     .comment-section {
