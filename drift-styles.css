@@ -781,5 +781,9 @@ p{
     background-image: none;
   }
 
+    .blank{
+        min-height: 80vh;
+    }
+
 
   }
