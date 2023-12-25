@@ -680,7 +680,13 @@ p{
       background-color: var(--background-main-page);
       color: white;
     }
-  
+
+          .container {
+        width: 373px;
+        min-height: 896px;
+        background-size: 100%;
+        background-position: center;
+      }
   
      .gallery{
       justify-content: center;
