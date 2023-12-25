@@ -167,29 +167,6 @@ nav ul{
   .title p{
     width: 100%;
   }
-  
-  .greetings{
-    position: relative;
-  }
-  .greetings img{
-    /*background-image: url("https://i.pinimg.com/originals/45/e3/41/45e34127b71091a7d5faeff6838b8f8d.jpg");*/
-    width:100%;
-    height: 700px;
-
-  }
-  .greetings::before{
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    content: "Formula-One";
-    content: "24 часа Ле-Мана — автомобильная гонка на выносливость, проходящая ежегодно с 1923 года недалеко от города Ле-Ман во Франции. Команды вынуждены искать баланс между скоростью и надёжностью автомобилей, которые должны продержаться в течение 24 часов без механических повреждений, а также рационально использовать расходные материалы. Заодно проверяется и выносливость пилотов, которым зачастую приходится проводить за рулём до четырёх часов подряд.";
-   width: 50%;
-   font-size: 2em;
-   color: var(--font-color-white);
-   background-color: rgba(0, 0, 0, 0.634);
-   padding: 2%;
-   border-radius: 2%;
-  }
 
   .container {
     text-align: center;
@@ -723,7 +700,12 @@ p{
       justify-content: space-around;
      }
      
-
+    .container {
+        width: 373px;
+        min-height: 896px;
+        background-size: 100%;
+        background-position: center;
+      }
 
     .title{
       display: flex;
