@@ -701,11 +701,23 @@ p{
       justify-content: space-around;
      }
 
-    .container{
-      width: 373px;
-      min-height: 896px;
-      background-image: url("https://i.pinimg.com/564x/66/ff/d4/66ffd40013095215d1aa96ca17198add.jpg");
-    }
+       .container {
+    text-align: center;
+    color: var(--color);
+    width: 373px;
+    min-height: 896px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://i.pinimg.com/564x/66/ff/d4/66ffd40013095215d1aa96ca17198add.jpg");
+    
+    background-size: fixed;
+    background-position: center;
+    
+  /*  this is where the magic happens:  */
+    background-attachment: fixed;
+  }
      
 
     .title{
