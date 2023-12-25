@@ -777,8 +777,8 @@ p{
    .second {
     flex-direction: column;
     gap: 1.6em;
-    background-image: none;
     position: relative;
+    background-image: none;
   }
 
 
