@@ -670,7 +670,8 @@ p{
         min-height: 896px;
         background-size: 100%;
         background-position: center;
-        background-image: url("https://i.pinimg.com/564x/4b/61/be/4b61be2ae55574e7294c92084751ea22.jpg");
+        background-image: none;
+            /*url("https://i.pinimg.com/564x/4b/61/be/4b61be2ae55574e7294c92084751ea22.jpg");*/
       }
   
    
