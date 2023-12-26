@@ -703,7 +703,8 @@ p{
     .container {
         width: 373px;
         min-height: 896px;
-        background-size: 373px 896px;
+        background-size: contain;
+        background-repeat: no-repeat;
         background-position: center;
         background-image: url("https://i.pinimg.com/564x/3d/23/c3/3d23c32e79ade017b64ee29a57e85935.jpg");
       }
